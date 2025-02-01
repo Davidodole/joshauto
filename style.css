@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: "Roboto", serif;
+font-family: "Poppins", serif;
+font-family: "Montserrat", serif; */
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    font-family: "Roboto", serif;
+    letter-spacing: 1px;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: rgb(205, 205, 205, 0.3);
+}
+P{
+    font-size: 17px;
+    font-family: "Poppins", serif;
+}
+
+/* NAVIGATION BAR */
+nav{
+    display: flex;
+    font-weight: 600;
+    font-family: "Montserrat", serif;
+    justify-content: space-between;
+    z-index: 10000000000000;
+    padding: 20px 17%;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color: #fff;
+}
+nav a:hover{
+    color: red;
+    transition: all 0.5s;
+}
+nav .logo{
+    font-size: 1.2em;
+}
+nav span{
+    font-size: 1.4em;
+    color: red;
+}
+.changeNav{
+    position: fixed;
+    background-color: #fff;
+    color: #000 !important;
+}
+nav .quote{
+    background-color: red;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 30px;
+}
+nav .quote:hover,
+.homepage .quote:hover{
+    background-color: rgb(223, 36, 36);
+    transition: all 0.4s;
+}
+nav .nav_item{
+    display: flex;
+    gap: 15px;
+}
+nav .button {
+    display: none;
+}
+
+
+/* QUOTATION  */
+.quotation{
+    position: fixed;
+    width: 0;
+    height: 100dvh;
+    transition:  all 0.4s;
+    top: 0;
+    overflow: hidden;
+    background-color: #f5f6f7;
+    z-index: 100000;
+    color: #000;
+    right: 0;
+}
+.quotation .title{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.quotation hr{
+    background-color: #77959b;
+    height: 1px;
+    border: none;
+}
+.quotation p{
+    font-size: 13px;
+    line-height: 1.4;
+    color: #797676;
+}
+.quotation a{
+    background-color: rgb(241, 75, 75,0.3);
+    padding: 7px 9px;
+    font-size: 12px;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 400;
+    color: red;
+}
+.quotation i:hover{
+    color: #fff;
+}
+.quotation a:hover{
+    color: #fff;
+    background-color: red;
+    transition: all 0.4s;
+}
+.quotation .content{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.quotation form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    gap: 7px;
+}
+.open{
+    width: 450px;
+    transition: all 0.3s;
+}
+.quotation form textarea{
+    border: none;
+    line-height: 2;
+    font-size: 17px;
+    padding: 10px 20px;
+    outline: none;
+}
+.quotation form input{
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 14px;
+}
+.quotation form input:hover{
+    border: 1px solid orangered;
+}
+.quotation form input:last-child{
+    background-color: red;
+    color: #fff;
+}
+.quotation .mess{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.quotation .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 70px 0 0;
+}
+.quotation .social a{
+    font-size: 1.3em;
+}
+.quotation .close-quote{
+    cursor: pointer;
+    font-size: 30px;
+}
+/* HOMEPAGE  */
+.homepage{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("image/bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    transform-origin: bottom;
+    color: #fff;
+}
+.homepage .fisrt-layer{
+    padding: 7em 17%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.homepage .home-wrap{
+    display: flex;
+    padding: 2em 0 7em;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+}
+
+.homepage .quote{
+    background-color: red;
+    padding: 17px 10px;
+    position: relative;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 4px;
+    color: #fff;
+}
+.homepage .form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    padding: 70px 30px;
+
+}
+.homepage h1{
+    font-size: 50px;
+}
+.homepage form{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.homepage form input{
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+    padding: 14px;
+    border: none;
+    background-color: rgb(205, 205, 205, 0.3);
+}
+.homepage form input:hover{
+    border: 1px solid orangered;
+}
+.homepage form input:last-child{
+    background-color: red;
+    font-weight: 600;
+    color: #fff;
+}
+.homepage .wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* CARDS */
+.homepage .wrap-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row .col{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.col .card{
+    min-width: 32%;
+    display: grid;
+    background-color: #fff;
+    gap: 30px;
+    padding: 10px 10px 40px;
+}
+.col .card p,
+.col .card h3{
+    color: #000;
+}
+.col .card img{
+    width: 100%;
+}
+.card-content{
+    padding: 0 10px;
+    display: grid;
+    gap: 10px;
+
+}
+.card-content .tt_targert{
+    margin-top: 20px;
+}
+.card-content h3{
+    font-size: 1.2em;
+}
+.card-content .tt_targert a{
+    background-color: red;
+    color: #fff;
+    padding: 13px;
+    border-radius: 4px;
+}
+.card-content .tt_targert a:hover{
+    transition: all 0.4s;
+    background-color: rgb(240, 76, 76);
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA OF 1400PX TO 1000PX */
+
+@media screen and (max-width: 1250px) {
+    
+    nav {
+        padding: 20px 7%;
+        position: absolute;
+    }
+    .homepage{
+        height: 100dvh;
+    }
+    .homepage .home-wrap{
+        display: block;
+        gap: 3em;
+    }
+    .homepage .fisrt-layer{
+        padding: 8em 7% 2em;
+    }
+    .homepage .form{
+        margin-top: 30px;
+        padding: 4em 4em 6em;
+    }
+    .homepage .form input{ 
+        width: inherit;
+    }
+}
+
+
+
+
+
+
+
+
+/* MEDIA OF 10000PX */
+
+@media  screen and (max-width: 950px) {
+    .homepage h1{
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+/* MEDIA OF 800PX */
+
+@media  screen and (max-width: 800px) {
+    nav {
+        position: relative;
+        padding:  8px 4%;
+    }
+    .open{
+        width:  100%;
+        transition: all 0.3s;
+    }
+    .active{
+        height: 270px !important;
+    }
+    nav a{
+        color: #000;
+    }
+    nav .button{
+        display: block;
+        padding: 4px;
+    }
+    .change .bar1{
+        transform: translate(0px, 6px) rotateZ(45deg);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+    .change .bar3{
+        transform: translate(0px, -12px) rotateZ(-45deg);
+    }
+    nav .line{
+        background-color: #000;
+        height: 4px;
+        transition: all 0.4s;
+        width: 20px;
+        margin: 4px;
+        border-radius: 10px;
+    }
+    nav .nav_item{
+        display: block;
+        position: absolute;
+        transition: all 0.5s;
+        top: 3em;
+        z-index: 100000;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        left: 0;
+        padding: 0 6%;
+        background-color: #fff;
+    }
+    nav li{
+        padding: 12px 0;
+        display: block;
+    }
+    nav .quote{
+        display: flex;
+        justify-content: center;
+        background-color: red;
+        border-radius: 7px;
+        color: #fff;
+        padding: 17px 0;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .homepage .fisrt-layer{
+        padding: 20px ;
+    }
+    .homepage form input{
+        width:  100%;
+        font-size: 16px;
+        outline: none;
+        padding: 14px;
+        border: none;
+        background-color: rgb(205, 205, 205, 0.3);
+    }
+    .homepage .form{
+        margin-top: 30px;
+        padding:  8px 4%;
+    }
+}
